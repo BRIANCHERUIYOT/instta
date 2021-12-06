@@ -1,8 +1,10 @@
-from django.shortcuts import render
 from django.shortcuts import render,redirect
+from . forms import ImageUploadForm,ImageProfileForm,CommentForm
 from .models import Image,Comments,Profile
 from django.contrib.auth.decorators import login_required
+from vote.managers import  VotableManager
 from django.contrib.auth.models import User
+votes = VotableManager()
 
 
 # Create your views here.
