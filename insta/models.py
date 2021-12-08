@@ -4,6 +4,10 @@ from tinymce.models import HTMLField
 from vote.models import VoteModel
 from cloudinary.models import CloudinaryField
 
+from django.contrib.contenttypes.models import ContentType
+type = ContentType.objects.get_for_model(object)
+
+
 
 
 class Image(VoteModel,models.Model):
@@ -12,6 +16,7 @@ class Image(VoteModel,models.Model):
     image_caption = models.CharField(max_length=50)
     likes = models.PositiveIntegerField(default=0)
     user = models.ForeignKey(User,on_delete=models.CASCADE)
+    
     
     def save_image(self):
         self.save()

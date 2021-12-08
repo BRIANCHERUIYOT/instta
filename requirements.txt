@@ -5,10 +5,10 @@ cloudinary==1.23.0
 confusable-homoglyphs==3.2.0
 dj-database-url==0.5.0
 Django==3.1.3
-django-bootstrap4==2.3.1
+django-bootstrap4
 django-class-auth-views==1.0.2
-django-heroku==0.3.1
-django-registration==2.4.1
+django-heroku
+django-registration
 django-session-security==2.6.6
 django-session-timeout==0.1.0
 django-six==1.0.4

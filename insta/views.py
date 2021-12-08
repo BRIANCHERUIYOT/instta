@@ -6,9 +6,6 @@ from vote.managers import  VotableManager
 from django.contrib.auth.models import User
 votes = VotableManager()
 
-
-# Create your views here.
-
 @login_required(login_url='/accounts/login/')
 def home(request):
     images = Image.objects.all()
