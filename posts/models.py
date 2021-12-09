@@ -42,7 +42,7 @@ class Post(models.Model):
 
 
 class Profile(models.Model):
-  picture = CloudinaryField('image')
+  picture = CloudinaryField('image',default='v1638348565/owuk4syvculcljuzdron.jpg')
   bio = models.TextField()
   user = models.OneToOneField(User,on_delete = models.CASCADE)
 
